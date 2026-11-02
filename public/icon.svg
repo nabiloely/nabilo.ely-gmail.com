@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="50%" stop-color="#047857" />
+      <stop offset="100%" stop-color="#022c22" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="50%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#ca8a04" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Outer Decorative Ring -->
+  <circle cx="256" cy="256" r="220" fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-opacity="0.4" stroke-dasharray="8 8" />
+  <circle cx="256" cy="256" r="204" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-opacity="0.6" />
+
+  <!-- Tasbeeh Beads Archetype -->
+  <g fill="url(#goldGrad)" opacity="0.85">
+    <circle cx="256" cy="76" r="9" />
+    <circle cx="346" cy="100" r="8" />
+    <circle cx="412" cy="166" r="8" />
+    <circle cx="436" cy="256" r="9" />
+    <circle cx="412" cy="346" r="8" />
+    <circle cx="346" cy="412" r="8" />
+    <circle cx="256" cy="436" r="9" />
+    <circle cx="166" cy="412" r="8" />
+    <circle cx="100" cy="346" r="8" />
+    <circle cx="76" cy="256" r="9" />
+    <circle cx="100" cy="166" r="8" />
+    <circle cx="166" cy="100" r="8" />
+  </g>
+
+  <!-- Central Crescent & Star -->
+  <!-- Crescent -->
+  <path d="M290 145 C215 155 160 215 160 290 C160 370 225 435 305 435 C345 435 380 418 405 390 C335 410 250 365 240 285 C232 220 270 162 290 145 Z" fill="url(#goldGrad)" filter="url(#glow)" />
+
+  <!-- 8-Pointed Star -->
+  <path d="M345 190 L356 215 L382 226 L356 237 L345 263 L334 237 L308 226 L334 215 Z" fill="url(#goldGrad)" filter="url(#glow)" />
+
+  <!-- Inner Prayer Book / Geometric Heart -->
+  <path d="M210 295 Q256 315 302 295 L302 335 Q256 355 210 335 Z" fill="#ffffff" opacity="0.9" />
+  <circle cx="256" cy="325" r="4" fill="url(#goldGrad)" />
+</svg>

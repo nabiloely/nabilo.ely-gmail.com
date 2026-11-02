@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-tajawal: 'Tajawal', system-ui, -apple-system, sans-serif;
+    --font-amiri: 'Amiri', serif;
+  }
+  
+  body {
+    font-family: var(--font-tajawal);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.font-amiri {
+  font-family: var(--font-amiri);
+}
+
+.font-tajawal {
+  font-family: var(--font-tajawal);
+}
+
+/* Custom scrollbars for clean look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.2);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.4);
+}
+
+/* Islamic arabesque subtle geometric pattern */
+.islamic-pattern {
+  background-color: transparent;
+  background-image: radial-gradient(rgba(180, 83, 9, 0.08) 1px, transparent 1px), radial-gradient(rgba(4, 120, 87, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+.dark .islamic-pattern {
+  background-image: radial-gradient(rgba(245, 158, 11, 0.08) 1px, transparent 1px), radial-gradient(rgba(16, 185, 129, 0.08) 1px, transparent 1px);
+}

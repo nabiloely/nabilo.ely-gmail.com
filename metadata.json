@@ -1,0 +1,6 @@
+{
+  "name": "أذكاري | Athkar",
+  "description": "تطبيق إسلامي شامل للأذكار والتسبيح الذكي وإدارة العبادات اليومية وصحيح مسلم",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

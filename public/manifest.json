@@ -1,0 +1,51 @@
+{
+  "id": "/",
+  "name": "أذكاري | Athkar - رفيق العبادة والذكر اليومي",
+  "short_name": "أذكاري",
+  "description": "تطبيق إسلامي شامل وموثوق للأذكار والتسبيح الذكي وإدارة العبادات اليومية وأحاديث صحيح مسلم بدون إنترنت.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#064e3b",
+  "background_color": "#064e3b",
+  "dir": "rtl",
+  "lang": "ar",
+  "categories": ["lifestyle", "books", "utilities"],
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "التسبيح الذكي",
+      "short_name": "تسبيح",
+      "description": "افتح المسبحة الإلكترونية الذكية",
+      "url": "/?screen=tasbeeh",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "أذكار الصباح والمساء",
+      "short_name": "الأذكار",
+      "description": "قراءة أذكار الصباح والمساء المأثورة",
+      "url": "/?screen=adhkar",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}
